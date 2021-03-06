@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "Debug=app:* nodemon index",
     "start": "NODE_EVN=production node index",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "cover":"nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "husky": "^4.3.7",
     "lint-staged": "^10.5.3",
     "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "prettier": "^2.2.1",
     "proxyquire": "^2.1.3",
     "sinon": "^9.2.4",

@@ -7,7 +7,8 @@
     "dev": "Debug=app:* nodemon index",
     "start": "NODE_EVN=production node index",
     "test": "mocha --exit",
-    "cover":"nyc npm run test"
+    "cover":"nyc npm run test",
+    "report":"nyc report --reporter=html && open coverage/index.html"
   },
   "repository": {
     "type": "git",
